@@ -44,7 +44,7 @@ fixClorophylData <- function(chla)
     fecha <- ymd(paste(chla$Year[i],chla$Month[i], 1))
     if( is.na(fecha)){
       if(chla$Month[i]=="Mar")
-        fecha <- ymd(paste(chla$Year[i],3, 1))
+        fecha <- lubridate::ymd(paste(chla$Year[i],3, 1))
       else {
         fecha <- dmy(chla$Month[i])
 
