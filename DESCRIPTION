@@ -2,8 +2,9 @@ Package: miPaqueteR
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0.9000
-Authors@R: c(person("Gon","Lopez",email="gmail.com",role="cre"),
-            person("Maxi","Lopez",email="gmail.com",role="man"))
+Authors@R: c(person("Gon","Lopez",email="gonzalo_lopez89@hotmail.com",role="cre"),
+            person("Maxi","Lopez",email="gonzalo.maximiliano.lopez@gmail.com",role="aut")
+            )  
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: MIT
@@ -12,3 +13,5 @@ LazyData: true
 Depends: R (>= 3.4.4)
 Imports: lubridate (>= 1.7.4),
          ggplot2 (>= 3.0.0)
+URL: https://github.com/gonzamaxilopez/miPaqueteR.git
+BugReports: https://github.com/gonzamaxilopez/miPaqueteR/issues
