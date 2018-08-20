@@ -1,18 +1,16 @@
 Package: miPaqueteR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Ajuste de la distribucion de frecuencias de datos de conteo  
 Version: 0.1.0.9000
-Authors@R: c(person("Gon","Lopez",email="gonzalo_lopez89@hotmail.com",role="cre"),
-            person("Maxi","Lopez",email="gonzalo.maximiliano.lopez@gmail.com",role="aut")
+Authors@R: c(person("Gonzalo","Lopez",email="gonzalo_lopez89@hotmail.com",role="cre"),
+            person("Maximiliano","Lopez",email="gonzalo.maximiliano.lopez@gmail.com",role="aut")
             )  
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: En este paquete el usuario contará con herramientas básicas para poder realizar un análisis rápido de los datos muestrales de un conteo, visualizando de manera sencilla la distribución de frecuencias de sus datos, para luego poder compararla cualitativamente con la distribución de Poisson y la distribución Binomial Negativa. Además este paquete brindará, utilizando el Método de Máxima Verosimilitud, los parámetros correspondientes a ambas distribuciones.
 License: MIT
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.4.4)
-Imports: lubridate (>= 1.7.4),
-         ggplot2 (>= 3.0.0)
+Imports: mass (>= 7.3-49)
 URL: https://github.com/gonzamaxilopez/miPaqueteR.git
 BugReports: https://github.com/gonzamaxilopez/miPaqueteR/issues
 RoxygenNote: 6.0.1
