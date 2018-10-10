@@ -37,10 +37,11 @@ freq <- function(X)
 #'
 #' @examples View(data1)
 #' Par<-fitcount(data1$Ascaris.worm.burden)
+#require(MASS)
 
 fitcount<- function(X)
 {
-  require(MASS)
+
   Fx <- freq(X)
   parnb <- fitdistr(X,"negative binomial")#parameter of distribution negative binomial
   k <- parnb[[1]][1]

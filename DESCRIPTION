@@ -10,7 +10,7 @@ License: MIT
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.4.4)
-Imports: mass (>= 7.3-49)
+Imports: MASS (>= 7.3-49)
 URL: https://github.com/gonzamaxilopez/miPaqueteR.git
 BugReports: https://github.com/gonzamaxilopez/miPaqueteR/issues
 RoxygenNote: 6.0.1
