@@ -12,7 +12,7 @@ LazyData: true
 Depends: R (>= 3.4.4)
 Imports: MASS (>= 7.3-49),
 graphics (>= 3.4.4),
-stats (>= 3.4.4)
+stats (>= 3.4.4),
 URL: https://github.com/gonzamaxilopez/miPaqueteR.git
 BugReports: https://github.com/gonzamaxilopez/miPaqueteR/issues
 RoxygenNote: 6.0.1
