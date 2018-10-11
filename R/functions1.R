@@ -43,17 +43,17 @@ fitcount<- function(X)
 {
 
   Fx <- freq(X)
-  parnb <- fitdistr(X,"negative binomial")#parameter of distribution negative binomial
+  parnb <- MASS::fitdistr(X,"negative binomial")#parameter of distribution negative binomial
   k <- parnb[[1]][1]
   mu <- parnb[[1]][2]
   prob <- k/(k+mu)
-  disnb<- length(X)*dnbinom(c(0:max(X)),k,prob)
+  disnb<- length(X)*stats::dnbinom(c(0:max(X)),k,prob)
   V1 <- rbind(Fx,disnb)
-  barplot(V1,beside = TRUE,col =c("grey","red"),names.arg=c(0:max(X)),main=paste("D. Frecuencias VS D. Binomial Negativa","BN( k=",round(k, digits = 3),",p=",round(prob, digits = 3),")"),ylab="Frecuencias",xlab="Clases",legend = c("D. Frecuencias","D. Binomial Negativa"))
-  parpo <- fitdistr(X,"poisson")#parameter of distribution poisson
+  graphics::barplot(V1,beside = TRUE,col =c("grey","red"),names.arg=c(0:max(X)),main=paste("D. Frecuencias VS D. Binomial Negativa","BN( k=",round(k, digits = 3),",p=",round(prob, digits = 3),")"),ylab="Frecuencias",xlab="Clases",legend = c("D. Frecuencias","D. Binomial Negativa"))
+  parpo <- MASS::fitdistr(X,"poisson")#parameter of distribution poisson
   lambda <- parpo[[1]][1]
-  dispo<- length(X)*dpois(c(0:max(X)),lambda)#distribution poisson
+  dispo<- length(X)*stats::dpois(c(0:max(X)),lambda)#distribution poisson
   V2 <- rbind(Fx,dispo)
-  barplot(V2,beside = TRUE,col =c("grey","red"),names.arg=c(0:max(X)),main=paste("D. Frecuencias VS D. Poisson","Po( lambda=",round(lambda,digits=3),")"),ylab="Frecuencias",xlab="Clases",legend = c("D. Frecuencias","D. Poisson"))
+  graphics::barplot(V2,beside = TRUE,col =c("grey","red"),names.arg=c(0:max(X)),main=paste("D. Frecuencias VS D. Poisson","Po( lambda=",round(lambda,digits=3),")"),ylab="Frecuencias",xlab="Clases",legend = c("D. Frecuencias","D. Poisson"))
   return(c(paste("BN( k=",round(k, digits = 3),",p=",round(prob, digits = 3),")"),paste("Po( lambda=",round(lambda,digits=3),")")))
   }
