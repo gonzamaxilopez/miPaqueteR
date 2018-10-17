@@ -24,7 +24,7 @@ freq <- function(X)
       }
       F[j] <- c
     }
-  barplot(F,names.arg=c(0:max(X)),main="Distribución de Frecuencias",ylab="Frecuencias",xlab="Clases")
+  graphics::barplot(F,names.arg=c(0:max(X)),main="Distribución de Frecuencias",ylab="Frecuencias",xlab="Clases")
   return(F)
 }
 
