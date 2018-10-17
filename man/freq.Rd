@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions1.R
 \name{freq}
 \alias{freq}
-\title{Distribucion de frecuencias de datos de un conteo}
+\title{Distribución de frecuencias de datos de un conteo}
 \usage{
 freq(X)
 }
