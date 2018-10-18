@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions1.R
 \name{fitcount}
 \alias{fitcount}
-\title{Ajuste de una distribución de frecuencias de datos de un conteo}
+\title{Ajuste de una distribucion de frecuencias de datos de un conteo}
 \usage{
 fitcount(X)
 }
@@ -10,11 +10,10 @@ fitcount(X)
 \item{X}{Vector numerico de valores enteros correspondiente a datos muestrales de un conteo}
 }
 \value{
-Retorna los parametros de la Destrucción Binomial Negativa y Poisson  luego de aplicar el Método de Máxima Verosimilitud a los datos muestrales de conteo. Además presenta los siguientes gráficos: la distribución de frecuencias de los datos analizados, la distribución de frecuencias vs distribución Binomial Negativa, la distribución de frecuencias vs distribución de Poisson
-#Retorna los parametros de la Distribucion Binomial Negativa y Poisson  luego de  aplicar el Metodo de Maxima Verosimilitud  a los datos muestrales de conteo. Ademas presenta los siguientes graficos: la distribucion de frecuencias de los datos analisados, la distribucion de frecuencias vs distribucion Binomial Negativa, la distribucion de frecuencias vs distribucion de Poisson
+Retorna los parametros de la distribucion Binomial Negativa y Poisson luego de aplicar el metodo de Maxima Verosimilitud a los datos muestrales de conteo. Ademas, presenta los siguientes graficos: la distribucion de frecuencias de los datos analizados, la distribucion de frecuencias vs distribucion Binomial Negativa, la distribucion de frecuencias vs distribucion de Poisson
 }
 \description{
-Ajuste de una distribución de frecuencias de datos de un conteo
+Ajuste de una distribucion de frecuencias de datos de un conteo
 }
 \examples{
 View(data1)

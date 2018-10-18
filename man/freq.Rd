@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions1.R
 \name{freq}
 \alias{freq}
-\title{Distribución de frecuencias de datos de un conteo}
+\title{Distribucion de frecuencias de datos de un conteo}
 \usage{
 freq(X)
 }
@@ -10,8 +10,7 @@ freq(X)
 \item{X}{Vector numerico de valores enteros correspondiente a datos muestrales de un conteo}
 }
 \value{
-Retorna un vector de la distribución de frecuencia de los datos muestrales analizados y un gráfico de esta distribución
-#Retorna un vector de la distribucion de frecuencia de los datos muestrales analizados y un grafico de esta distribucion
+Retorna un vector de la distribucion de frecuencia de los datos muestrales analizados y un grafico de esta distribucion
 }
 \description{
 Distribucion de frecuencias de datos de un conteo
